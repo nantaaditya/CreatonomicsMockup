@@ -16,3 +16,24 @@
   width: 100% !important;
   background-color: #fff;
 }
+
+#judul {
+  -ven-dor-animation-duration: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+#deskripsi {
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+#tombol {
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 4s;
+  -vendor-animation-iteration-count: infinite;
+}
+.boxImage {
+  -vendor-animation-duration: 3s;
+}
+.boxText{
+  -vendor-animation-duration: 3s;
+}

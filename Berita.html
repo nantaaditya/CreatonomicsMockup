@@ -37,10 +37,8 @@
 
               <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                  <li class="dropdown user user-menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      Daftar
-                    </a>
+                  <li class="user user-menu">
+                    <a href="daftar.html">Daftar</a>
                   </li>
                 </ul>
               </div>
@@ -54,18 +52,18 @@
           <div class="container">
             <section class="content">
               <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animatedParent">
                   <h2 class="text-aqua text-center">Berita</h2>
                   <ul class="timeline">
                     <li class="time-label">
-                      <span class="bg-blue">10 Feb. 2014</span>
+                      <span class="bg-blue wow slideInDown">10 Feb. 2014</span>
                     </li>
                     <li>
-                      <i class="fa fa-file-text-o bg-blue"></i>
-                      <div class="timeline-item">
+                      <i class="fa fa-file-text-o bg-blue wow zoomIn"></i>
+                      <div class="timeline-item wow slideInLeft">
                         <h3 class="timeline-header"><a href="#">Berita 1</a></h3>
                         <div class="timeline-body">
-                          <p class="text-justify">
+                          <p class="text-justify wow fadeIn">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                           </p>
                         </div>
@@ -77,14 +75,52 @@
                       </div>
                     </li>
                     <li class="time-label">
-                      <span class="bg-blue">10 Feb. 2014</span>
+                      <span class="bg-blue wow slideInDown">10 Feb. 2014</span>
                     </li>
                     <li>
-                      <i class="fa fa-file-text-o bg-blue"></i>
-                      <div class="timeline-item">
+                      <i class="fa fa-file-text-o bg-blue wow zoomIn"></i>
+                      <div class="timeline-item wow slideInLeft">
                         <h3 class="timeline-header"><a href="#">Berita 1</a></h3>
                         <div class="timeline-body">
-                          <p class="text-justify">
+                          <p class="text-justify wow fadeIn">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          </p>
+                        </div>
+                        <div class="timeline-footer">
+                          <div class="text-center">
+                            <button class="btn btn-flat btn-success"><i class="fa fa-eye"></i> Selengkapnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="time-label">
+                      <span class="bg-blue wow slideInDown">10 Feb. 2014</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-file-text-o bg-blue wow zoomIn"></i>
+                      <div class="timeline-item wow slideInLeft">
+                        <h3 class="timeline-header"><a href="#">Berita 1</a></h3>
+                        <div class="timeline-body">
+                          <p class="text-justify wow fadeIn">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          </p>
+                        </div>
+                        <div class="timeline-footer">
+                          <div class="text-center">
+                            <button class="btn btn-flat btn-success"><i class="fa fa-eye"></i> Selengkapnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="time-label">
+                      <span class="bg-blue wow slideInDown" data-sequence="1000'">10 Feb. 2014</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-file-text-o bg-blue wow zoomIn"></i>
+                      <div class="timeline-item wow slideInLeft">
+                        <h3 class="timeline-header"><a href="#">Berita 1</a></h3>
+                        <div class="timeline-body">
+                          <p class="text-justify wow fadeIn">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                           </p>
                         </div>
@@ -119,7 +155,9 @@
     <script src="static/plugins/fastclick/fastclick.js"></script>
     <script src="static/dist/js/app.min.js"></script>
     <script src="static/dist/js/demo.js"></script>
+    <script src="static/custom/wow.js"></script>
     <script>
+      new WOW().init();
       $(document).ready(function() {
 
       });
