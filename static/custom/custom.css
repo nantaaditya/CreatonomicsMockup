@@ -2,6 +2,17 @@
   background: #264348;
   color:#fff;
 }
+.bg-indigo:hover{
+  background:#044F67;
+  color:#fff;
+}
+.text-indigo{
+  color:#044F67;
+}
 .text-white{
   color:#fff;
+}
+.fullpage-wrapper{
+  width: 100% !important;
+  background-color: #fff;
 }
