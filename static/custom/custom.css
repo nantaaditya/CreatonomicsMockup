@@ -37,3 +37,22 @@
 .boxText{
   -vendor-animation-duration: 3s;
 }
+.contact{
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.contact:hover{
+  color: #264348;
+}
+.contact i{
+  color:#fff;
+  font-size: 50px;
+}
+.contactIcon{
+  transition: all .2s ease-in-out;
+}
+.contactIcon:hover{
+  color:#044F67;
+  transform: scale(1.3);
+}
