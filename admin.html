@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Creatonomics - Daftar</title>
+    <title>Creatonomics</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!--CSS-->
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css"/>
@@ -87,7 +87,7 @@
             <section class="content">
               <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                   <!--BERITA-->
                   <div class="row targetDiv" id="div1">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -125,57 +125,59 @@
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <br/>
-                      <table id="tabelBerita" class="table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>Judul Berita</th>
-                            <th>Tanggal Posting</th>
-                            <th>Opsi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>12 Feb 2017</td>
-                            <td>
-                              <div class="text-center">
-                                <div class="btn-group">
-                                  <button class="btn btn-flat btn-warning" data-toggle="modal" data-target="#editBerita"><i class="fa fa-pencil"></i> Edit</button>
-                                  <button class="btn btn-flat btn-danger"><i class="fa fa-trash"></i> Delete</button>
-                                </div>
-                              </div>
-                            </td>
-                            <!-- Modal -->
-                            <div id="editBerita" class="modal fade" role="dialog">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Edit Berita</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <form>
-                                      <label class="label label-primary">Judul Berita</label>
-                                      <input type="text" class="form-control"/>
-                                      <br/>
-                                      <label class="label label-primary">Isi Berita</label>
-                                      <textarea class="form-control" rows="6" id="editBeritaEditor"></textarea>
-                                      <br/>
-                                      <button class="btn btn-flat btn-success pull-right"><i class="fa fa-pencil"></i> Tambah Berita</button>
-                                    </form>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <br/>
+                      <div class="table-responsive">
+                        <table id="tabelBerita" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Judul Berita</th>
+                              <th>Tanggal Posting</th>
+                              <th>Opsi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>A</td>
+                              <td>12 Feb 2017</td>
+                              <td>
+                                <div class="text-center">
+                                  <div class="btn-group">
+                                    <button class="btn btn-flat btn-warning" data-toggle="modal" data-target="#editBerita"><i class="fa fa-pencil"></i> Edit</button>
+                                    <button class="btn btn-flat btn-danger"><i class="fa fa-trash"></i> Delete</button>
                                   </div>
                                 </div>
+                              </td>
+                              <!-- Modal -->
+                              <div id="editBerita" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Edit Berita</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <label class="label label-primary">Judul Berita</label>
+                                        <input type="text" class="form-control"/>
+                                        <br/>
+                                        <label class="label label-primary">Isi Berita</label>
+                                        <textarea class="form-control" rows="6" id="editBeritaEditor"></textarea>
+                                        <br/>
+                                        <button class="btn btn-flat btn-success pull-right"><i class="fa fa-pencil"></i> Tambah Berita</button>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <br/>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <!--/MODAL-->
-                          </tr>
-                        </tbody>
-                      </table>
+                              <!--/MODAL-->
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                   <!--GALERI-->
@@ -214,30 +216,32 @@
                       <!--/MODAL-->
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <table id="tabelGaleri" class="table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>Caption</th>
-                            <th>Image</th>
-                            <th>Opsi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>
-                              <img src="http://placehold.it/200x100/612b65/fff&text=Product+Main" class="img img-responsive"/>
-                            </td>
-                            <td>
-                              <div class="text-center">
-                                <button class="btn btn-flat btn-danger"><i class="fa fa-trash"></i> Delete</button>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table-responsive">
+                        <table id="tabelGaleri" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Caption</th>
+                              <th>Image</th>
+                              <th>Opsi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>A</td>
+                              <td>
+                                <img src="http://placehold.it/200x100/612b65/fff&text=Product+Main" class="img img-responsive"/>
+                              </td>
+                              <td>
+                                <div class="text-center">
+                                  <button class="btn btn-flat btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                   <!--PESERTA-->
@@ -250,113 +254,115 @@
                       <button class="btn btn-flat btn-danger pull-right"><i class="fa fa-close"></i> Nonaktifkan Semua Peserta</button>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <table id="tabelPeserta" class="table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>No</th>
-                            <th>Nama tim</th>
-                            <th>Nama bisnis</th>
-                            <th>Waktu berdiri</th>
-                            <th>Bidang bisnis</th>
-                            <th>Kategori</th>
-                            <th>opsi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>1</th>
-                            <th>A</th>
-                            <th>A</th>
-                            <th>2017</th>
-                            <th>Film</th>
-                            <th>Mahasiswa</th>
-                            <th>
-                              <div class="text-center">
-                                <div class="btn-group-vertical btn-block">
-                                  <div class="btn btn-flat btn-info" data-toggle="modal" data-target="#lihatAnggota"><i class="fa fa-eye"></i> Anggota</div>
-                                  <div class="btn btn-flat btn-primary"><i class="fa fa-download"></i> Lampiran</div>
-                                </div>
-                              </div>
-                            </th>
-                            <!-- Modal -->
-                            <div id="lihatAnggota" class="modal fade" role="dialog">
-                              <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Lihat Anggota</h4>
+                      <div class="table-responsive">
+                        <table id="tabelPeserta" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>No</th>
+                              <th>Nama tim</th>
+                              <th>Nama bisnis</th>
+                              <th>Waktu berdiri</th>
+                              <th>Bidang bisnis</th>
+                              <th>Kategori</th>
+                              <th>opsi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>1</th>
+                              <th>A</th>
+                              <th>A</th>
+                              <th>2017</th>
+                              <th>Film</th>
+                              <th>Mahasiswa</th>
+                              <th>
+                                <div class="text-center">
+                                  <div class="btn-group-vertical btn-block">
+                                    <div class="btn btn-flat btn-info" data-toggle="modal" data-target="#lihatAnggota"><i class="fa fa-eye"></i> Anggota</div>
+                                    <div class="btn btn-flat btn-primary"><i class="fa fa-download"></i> Lampiran</div>
                                   </div>
-                                  <div class="modal-body">
-                                    <div class="row">
-                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
-                                        <br/>
-                                        <label class="label label-primary">Nama</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Tanggal lahir</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Email</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">No HP</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">ID Line</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                      </div>
-                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
-                                        <br/>
-                                        <label class="label label-primary">Nama</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Tanggal lahir</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Email</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">No HP</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">ID Line</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                      </div>
-                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
-                                        <br/>
-                                        <label class="label label-primary">Nama</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Tanggal lahir</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">Email</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">No HP</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
-                                        <label class="label label-primary">ID Line</label>
-                                        <input type="text" class="form-control" disabled="disabled"/>
-                                        <br/>
+                                </div>
+                              </th>
+                              <!-- Modal -->
+                              <div id="lihatAnggota" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Lihat Anggota</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
+                                          <br/>
+                                          <label class="label label-primary">Nama</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Tanggal lahir</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Email</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">No HP</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">ID Line</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
+                                          <br/>
+                                          <label class="label label-primary">Nama</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Tanggal lahir</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Email</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">No HP</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">ID Line</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="http://placehold.it/200x200/612b65/" class="img img-responsive"/>
+                                          <br/>
+                                          <label class="label label-primary">Nama</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Tanggal lahir</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">Email</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">No HP</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                          <label class="label label-primary">ID Line</label>
+                                          <input type="text" class="form-control" disabled="disabled"/>
+                                          <br/>
+                                        </div>
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <br/>
+                                    <div class="modal-footer">
+                                      <br/>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <!--/MODAL-->
-                          </tr>
-                        </tbody>
-                      </table>
+                              <!--/MODAL-->
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
